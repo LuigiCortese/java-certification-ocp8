@@ -34,7 +34,7 @@ public class Main {
 			for(int i:list)
 				list.add(a++);
 		}catch(ConcurrentModificationException e){
-			System.out.println("Trying to modify the internal structure of an ArrayList "
+			System.out.println("  :Trying to modify the internal structure of an ArrayList "
 					+ "caused a ConcurrentModificationException");
 		}
 		System.out.println("AFTER: "+list+"\n\n");
@@ -59,8 +59,7 @@ public class Main {
 		 */
 		resetValues();
 		System.out.println("BEFORE: "+COWAlist);
-		for(Iterator<Integer> iterator = COWAlist.iterator(); iterator.hasNext();) {
-			iterator.next();
+		for(Iterator<Integer> iterator = COWAlist.iterator(); iterator.hasNext();iterator.next()) {
 			COWAlist.add(a++);
 			System.out.println("  :"+COWAlist);
 		}
