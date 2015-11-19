@@ -5,6 +5,17 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
+  	<module>01_JavaClassDesign</module>
+  	<module>02_AdvancedJavaClassDesign</module>
+  	<module>03_GenericsAndCollections</module>
+  	<module>04_LambdaBuilt-inFunctionalInterfaces</module>
+  	<module>05_JavaStreamAPI</module>
+  	<module>06_ExceptionsAndAssertions</module>
+  	<module>07_JavaSE8DateTimeAPI</module>
+  	<module>08_JavaIOFundamentals</module>
+  	<module>09_JavaFileIO-NIO2</module>
   	<module>10_JavaConcurrency</module>
+  	<module>11_BuildingDatabaseApplicationsWithJDBC</module>
+  	<module>12_Localization</module>
   </modules>
 </project>
