@@ -1,6 +1,8 @@
 package net.devsedge.threadandrunnable.waitnotify;
 import static java.lang.System.out;
 
+import net.devsedge.Util;
+
 public class Main {
 	public static void main(String[] args) {
 		new Main();
@@ -8,7 +10,7 @@ public class Main {
 
 	Main(){
 		//run the timer
-		Util.startTimer();
+		Util.startTimer(1000);
 		
 		/*
 		 * Three threads (on the same *Locker* object) will gain the lock in sequence

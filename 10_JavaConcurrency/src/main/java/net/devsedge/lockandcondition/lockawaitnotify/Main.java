@@ -7,6 +7,8 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import net.devsedge.Util;
+
 public class Main {
 	
 	static Lock lock=new ReentrantLock();
@@ -14,7 +16,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		//run the timer
-		Util.startTimer();
+		Util.startTimer(1000);
 		
 		/*
 		 * Three threads (on the same *Locker* object) will gain the lock in sequence
