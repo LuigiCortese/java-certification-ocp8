@@ -1,5 +1,7 @@
 package net.devsedge.executorservice.withrunnable;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
@@ -18,12 +20,12 @@ public class App {
 		ExecutorService executor=Executors.newCachedThreadPool();
 
 		// creating the jobs
-		Runnable[] jobsList=new Runnable[5];
+		List<Runnable> runnableList=new ArrayList<>();
 		for(int i=0;i<5;i++)
-			jobsList[i]=new MyRunnable(ThreadLocalRandom.current().nextInt(3,7));
+			runnableList.add(new MyRunnable(ThreadLocalRandom.current().nextInt(3,7)));
 
 		// running the jobs
-		for(Runnable runnable:jobsList)
+		for(Runnable runnable:runnableList)
 			executor.execute(runnable);
 		
 		/*
