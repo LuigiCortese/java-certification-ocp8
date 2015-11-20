@@ -1,4 +1,4 @@
-package net.devsedge.copyonwritearraylist.basic;
+package net.devsedge.copyonwritearraylist.basics;
 
 import java.util.ArrayList;
 import java.util.Arrays;

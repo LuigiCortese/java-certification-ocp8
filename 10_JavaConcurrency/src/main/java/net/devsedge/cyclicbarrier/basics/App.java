@@ -1,4 +1,4 @@
-package net.devsedge.cyclicbarrier.basic;
+package net.devsedge.cyclicbarrier.basics;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
