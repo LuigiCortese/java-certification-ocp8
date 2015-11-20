@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>net.devsedge</groupId>
-    <artifactId>oracle-certified-professional-javase8</artifactId>
+    <artifactId>java-certification-ocp8</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>10_JavaConcurrency</artifactId>
