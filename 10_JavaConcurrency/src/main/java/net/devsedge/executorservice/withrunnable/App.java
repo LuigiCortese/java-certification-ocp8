@@ -29,7 +29,7 @@ public class App {
 		/*
 		 *  stopping the executor: default behavior is to wait for a maximum of 60 seconds of inactivity
 		 *  before stopping every thread. 
-		 *  This will guarantee every thread to be terminated as soon as they finish running
+		 *  This will guarantee every thread to be terminated as soon as it ends its execution
 		 */
 		executor.shutdown();
 	}
