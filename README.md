@@ -1,6 +1,8 @@
 
 # "Oracle Certified Professional, Java SE 8" training code
 
+[![Join the chat at https://gitter.im/LuigiCortese/java-certification-ocp8](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LuigiCortese/java-certification-ocp8?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Examples, resources and notes for "Oracle Certified Professional, Java SE 8" (OCPJP8) certification path, exam 1Z0-809
 
 ~~ Work in progress ~~
