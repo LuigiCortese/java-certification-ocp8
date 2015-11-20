@@ -4,7 +4,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Main {
+public class App {
 
 	static CyclicBarrier barrier;
 
@@ -45,8 +45,8 @@ class MyRunnable implements Runnable {
 	@Override
 	public void run() {
 		try {
-			System.out.println(name+" run, now awaiting ("+(Main.barrier.getNumberWaiting()+1)+" total)");
-			Main.barrier.await();
+			System.out.println(name+" run, now awaiting ("+(App.barrier.getNumberWaiting()+1)+" total)");
+			App.barrier.await();
 			System.out.println(name+" stopped awaiting!");
 		} catch (InterruptedException | BrokenBarrierException e) {
 			e.printStackTrace();

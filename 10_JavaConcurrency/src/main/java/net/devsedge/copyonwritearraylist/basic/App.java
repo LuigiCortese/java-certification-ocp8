@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class Main {
+public class App {
 
 	static List<Integer> list;
 	static CopyOnWriteArrayList<Integer> COWAlist;

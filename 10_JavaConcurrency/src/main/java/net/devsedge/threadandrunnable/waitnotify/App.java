@@ -1,20 +1,14 @@
-package net.devsedge.lockandcondition.lockawaitnotify;
-
+package net.devsedge.threadandrunnable.waitnotify;
 import static java.lang.System.out;
-
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 import net.devsedge.Util;
 
-public class Main {
-	
-	static Lock lock=new ReentrantLock();
-	static Condition condition=lock.newCondition();
-
+public class App {
 	public static void main(String[] args) {
+		new App();
+	}
+
+	App(){
 		//run the timer
 		Util.startTimer(1000);
 		
@@ -33,12 +27,10 @@ public class Main {
 		Util.sleep_(1000);
 		
 		/*
-		 * All the lockers are now waiting, *Unlocker* will release the lock with "signalAll"
+		 * All the lockers are now waiting, *Unlocker* will release the lock with "notifyAll"
 		 */
 		new Thread(new Unlocker(),String.format("%112s", "A")).start();
-	
-	}
-
+	}	
 }
 
 class Locker implements Runnable{
@@ -46,41 +38,35 @@ class Locker implements Runnable{
 	public void run() {
 		String name=Thread.currentThread().getName();
 		out.println(name+"  starts");
-		out.println(name+"  trying to get in \"synch\" block...");
-		Main.lock.lock();
-		try{
-			out.println(name+"* in \"synch\" block!");
+		out.println(name+"  trying to get in synch block...");
+		synchronized(Util.lock){
+			out.println(name+"* in synch block!");
 			out.println(name+"  waiting (releases lock)...");
-			try{Main.condition.await();
-			}catch(InterruptedException e){}
+			Util.wait_();
 			out.println(name+"* finished waiting out of exception!");
-			out.println(name+"  exiting \"synch\" block");
-		}finally{
-			Main.lock.unlock();
+			out.println(name+"  exiting synch block");
 		}
 	}
 }
+
 
 class Unlocker implements Runnable{
 	@Override
 	public void run() {
 		String name=Thread.currentThread().getName();
 		out.println(name+"  starts");
-		out.println(name+"  trying to get in \"synch\" block...");
-		Main.lock.lock();
-		try{
-			out.println(name+"* in \"synch\" block!");
+		out.println(name+"  trying to get in synch block...");
+		synchronized(Util.lock){
+			out.println(name+"* in synch block!");
 			out.println(name+"* sleeps for 3 secs");
 			Util.sleep_(3000);
 			out.println(name+"* awake!");
-			out.println(name+"* signals");
-			Main.condition.signalAll();
+			out.println(name+"* notifies");
+			Util.lock.notifyAll();
 			out.println(name+"* sleeps for 3 secs");
 			Util.sleep_(3000);
 			out.println(name+"* awake!");
-			out.println(name+"  exiting \"synch\" block");
-		}finally{
-			Main.lock.unlock();
+			out.println(name+"  exiting synch block");
 		}
 	}
 }

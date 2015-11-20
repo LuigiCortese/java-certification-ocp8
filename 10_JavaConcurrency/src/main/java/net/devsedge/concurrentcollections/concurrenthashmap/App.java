@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import net.devsedge.Util;
 
-public class Main {
+public class App {
 
 	static HashMap<String, Integer> hMap;
 	static ConcurrentHashMap<String, Integer> cMap;
