@@ -1,13 +1,17 @@
 package net.devsedge.forkjoin.withaction;
 
+import static java.lang.System.out;
+
 import java.util.Arrays;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveAction;
-import static java.lang.System.out;
+
+import net.devsedge.NameUtil;
 
 public class App {
 
 	static int[] data={1,2,3,4,5,6,7,8,9,10,11,12};
+	static NameUtil nameUtil=new NameUtil(20);
 	
 	public static void main(String[] args) {
 
@@ -35,30 +39,24 @@ public class App {
 
 class MyRecursiveAction extends RecursiveAction{
 	
-	private static char id='A';
-	private char origin;
 	private String name;
-	private final static int spacePrefix=20;
-	
 	private static final long serialVersionUID = 839423778891909774L;
-	private int start,end;
+	private int start,mid,end;
 	
 	{
-		name=String.format("%"+((id-'A')*spacePrefix+1)+"s", id);
-		id++;
+		name=App.nameUtil.getName();
 	}
 	
 	
 	public MyRecursiveAction(char origin,int start,int end){
 		out.println(name+": from "+origin);
-		this.origin=origin;
 		this.start=start;
 		this.end=end;
 	}
 	
 	@Override
 	protected void compute(){
-		out.println(name+": starts ["+start+","+end+"]");
+		out.println(name+": evaluating ["+start+","+end+"]");
 
 		// if workload is manageable
 		if(end-start+1<=3){
@@ -71,7 +69,7 @@ class MyRecursiveAction extends RecursiveAction{
 		// if workload is too big
 		else{
 			
-			int mid=((end-start+1)/2)+start;
+			mid=((end-start+1)/2)+start;
 			out.println(name+": too big, dividing ["+start+","+(mid-1)+"]["+mid+","+end+"]");
 			MyRecursiveAction recursiveActionLeft = new MyRecursiveAction(name.charAt(name.length() - 1),start,mid-1);
 			MyRecursiveAction recursiveActionRight = new MyRecursiveAction(name.charAt(name.length() - 1),mid,end);
