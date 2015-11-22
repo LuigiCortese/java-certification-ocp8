@@ -76,6 +76,6 @@ The project is made up of 12 Maven modules, one for each macro topic as defined 
   * Identify the components required to connect to a database using the DriverManager class including the JDBC URL
   * Submit queries and read results from the database including creating statements, returning result sets, iterating through the results, and properly closing result sets, statements, and connections
 12. **Localization**
-  * Read and set the locale by using the Locale object
+  * Read and set the locale by using the Locale**[[1]](12_Localization/src/main/java/net/devsedge/locale/basics/App.java)** object
   * Create and read a Properties file
   * Build a resource bundle for each locale and load a resource bundle in an application
