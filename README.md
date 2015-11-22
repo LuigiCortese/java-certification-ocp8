@@ -69,7 +69,7 @@ The project is made up of 12 Maven modules, one for each macro topic as defined 
   * Identify potential threading problems among deadlock, starvation, livelock, and race conditions
   * Use synchronized keyword and java.util.concurrent.atomic package to control the order of thread execution
   * Use java.util.concurrent collections**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/concurrentcollections/concurrenthashmap/App.java)** and classes including CyclicBarrier**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/cyclicbarrier/basic/App.java)** and CopyOnWriteArrayList**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/copyonwritearraylist/basic/App.java)**
-  * Use parallel Fork/Join**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/forkjoin/withaction/App.java)** Framework
+  * Use parallel Fork/Join**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/forkjoin/withaction/App.java)****[[1]](10_JavaConcurrency/src/main/java/net/devsedge/forkjoin/withtask/App.java)** Framework
   * Use parallel Streams including reduction, decomposition, merging processes, pipelines and performance.
 11. **Building Database Applications with JDBC**
   * Describe the interfaces that make up the core of the JDBC API including the Driver, Connection, Statement, and ResultSet interfaces and their relationship to provider implementations
