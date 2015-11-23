@@ -18,7 +18,7 @@ public class App {
 			e.printStackTrace();
 		}
 		
-		// iterating properties
+		// Iterating properties
 		for(String key : properties.stringPropertyNames())
 			System.out.println(key + " => " + properties.getProperty(key));
 	}
