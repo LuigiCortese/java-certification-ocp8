@@ -27,7 +27,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Create and use Lambda expressions
 3. **Generics and Collections**
   * Create and use a generic class
-  * Create and use ArrayList, TreeSet, TreeMap, and ArrayDeque objects
+  * Create and use ArrayList, TreeSet, TreeMap, and ArrayDeque**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/collections/sortorder/App.java)** objects
   * Use java.util.Comparator and java.lang.Comparable interfaces
   * Collections Streams and Filters
   * Iterate using forEach methods of Streams and List
