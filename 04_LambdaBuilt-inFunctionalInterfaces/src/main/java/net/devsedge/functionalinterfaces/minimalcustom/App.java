@@ -8,7 +8,6 @@ public class App {
 		
 	}
 	
-	
 	static int foo(int a,int b,MathOperation m){
 		return m.calculate(a,b);
 	}
