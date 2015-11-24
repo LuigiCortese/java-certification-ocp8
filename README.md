@@ -36,7 +36,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Use method references with Streams
 4. **Lambda Built-in Functional Interfaces**
   * Use  the built-in interfaces**[[1]](04_LambdaBuilt-inFunctionalInterfaces/src/main/java/net/devsedge/functionalinterfaces/minimalcustom/App.java)****[[2]](04_LambdaBuilt-inFunctionalInterfaces/src/main/java/net/devsedge/functionalinterfaces/methodreference/App.java)** included in the java.util.function package such as Predicate, Consumer, Function, and Supplier
-  * Develop code that uses primitive versions of functional interfaces
+  * Develop code that uses primitive versions of functional interfaces**[[1]](04_LambdaBuilt-inFunctionalInterfaces/src/main/java/net/devsedge/functionalinterfaces/primitive/App.java)**
   * Develop code that uses binary versions of functional interfaces
   * Develop code that uses the UnaryOperator interface
 5. **Java Stream API**
