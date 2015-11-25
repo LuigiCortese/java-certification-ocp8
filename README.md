@@ -45,7 +45,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Develop code that uses the Optional class
   * Develop code that uses Stream data methods and calculation methods
   * Sort a collection using Stream API
-  * Save results to a collection using the collect method and group/partition data using the Collectors class**[[1]](05_JavaStreamApi/src/main/java/net/devsedge/stream/collect/App.java)**
+  * Save results to a collection using the collect method and group/partition data using the Collectors class**[[1]](05_JavaStreamAPI/src/main/java/net/devsedge/stream/collect/App.java)**
   * Use flatMap() methods in the Stream API
 6. **Exceptions and Assertions**
   * Use try-catch and throw statements
