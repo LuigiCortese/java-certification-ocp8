@@ -6,7 +6,11 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 import net.devsedge.NameUtil;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 
 	static int[] data={1,2,3,4,5,6,7,8,9,10,11,12};

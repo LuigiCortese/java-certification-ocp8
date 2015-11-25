@@ -2,7 +2,11 @@ package net.devsedge.threadandrunnable.waitnotify;
 import static java.lang.System.out;
 
 import net.devsedge.Util;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 	public static void main(String[] args) {
 		new App();

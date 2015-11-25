@@ -11,7 +11,11 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 import net.devsedge.Util;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 
 public class App {
 

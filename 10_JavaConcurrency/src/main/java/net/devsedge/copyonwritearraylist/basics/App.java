@@ -6,7 +6,11 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 
 	static List<Integer> list;

@@ -1,5 +1,10 @@
 package net.devsedge.functionalinterfaces.methodreference;
 
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 	public static void main(String[] args) {
 
@@ -81,10 +86,11 @@ class Two {}
 class Three {}
 class Four {}
 
+
 /**
- * Functional interface
+ * Functional Interface
  * 
- * @author Mui
+ * @author Luigi Cortese
  *
  * @param <A>
  * @param <B>

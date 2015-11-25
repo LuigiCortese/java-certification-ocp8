@@ -7,7 +7,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 
 import net.devsedge.Util;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 
 	public static void main(String[] args) {

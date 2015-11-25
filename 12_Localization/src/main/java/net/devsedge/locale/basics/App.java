@@ -1,7 +1,11 @@
 package net.devsedge.locale.basics;
 
 import java.util.Locale;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 
 	static Locale locale;

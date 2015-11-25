@@ -2,7 +2,11 @@ package net.devsedge.resourceboundle.fromclass;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
-    
+/**
+ *     
+ * @author Luigi Cortese
+ *
+ */
 public class App{
     public static void main(String[] args){
 

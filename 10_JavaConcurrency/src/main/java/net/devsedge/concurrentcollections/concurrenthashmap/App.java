@@ -6,7 +6,11 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import net.devsedge.Util;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 
 	static HashMap<String, Integer> hMap;

@@ -3,7 +3,11 @@ package net.devsedge.cyclicbarrier.basics;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ThreadLocalRandom;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 
 	static CyclicBarrier barrier;

@@ -8,7 +8,11 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import net.devsedge.Util;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 	
 	static Lock lock=new ReentrantLock();

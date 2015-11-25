@@ -1,5 +1,10 @@
 package net.devsedge.functionalinterfaces.minimalcustom;
 
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App {
 
 	public static void main(String[] args) {
@@ -17,7 +22,8 @@ public class App {
 /**
  * This is a custom functional interface, it represents
  * a mathematical operation accepting two integers and returning one
- * @author Mui
+ * 
+ * @author Luigi Cortese
  *
  */
 interface MathOperation{
