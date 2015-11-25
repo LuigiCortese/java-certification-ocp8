@@ -19,10 +19,10 @@ public class App {
 		 *  Equivalent to
 		 *  
 		 *     T result = null;
-	     *     for (T element : this stream)
-	     *         result = accumulator.apply(result, element);
-	     *     return result;
-	     *     
+		 *     for (T element : this stream)
+		 *         result = accumulator.apply(result, element);
+		 *     return result;
+		 *     
 		 */
 		System.out.print("Reduction by accumulation rule: \n\t");
 		System.out.println(Stream.of(1,2,3,4,5).reduce(
