@@ -74,7 +74,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
 11. **Building Database Applications with JDBC**
   * Describe the interfaces that make up the core of the JDBC API including the Driver, Connection, Statement, and ResultSet interfaces and their relationship to provider implementations
   * Identify the components required to connect to a database using the DriverManager class including the JDBC URL
-  * Submit queries and read results from the database including creating statements, returning result sets, iterating through the results**[[1]](11_BuildingDatabaseApplicationsWithJDBC/src/main/java/net/devsedge/jdbc/basics/App.java)**, and properly closing result sets, statements, and connections
+  * Submit queries and read results**[[1]](11_BuildingDatabaseApplicationsWithJDBC/src/main/java/net/devsedge/jdbc/basics/App.java)** from the database including creating statements, returning result sets, iterating through the results, and properly closing result sets, statements, and connections
 12. **Localization**
   * Read and set the locale by using the Locale**[[1]](12_Localization/src/main/java/net/devsedge/locale/basics/App.java)** object
   * Create and read a Properties**[[1]](12_Localization/src/main/java/net/devsedge/resourcefile/basics/App.java)** file
