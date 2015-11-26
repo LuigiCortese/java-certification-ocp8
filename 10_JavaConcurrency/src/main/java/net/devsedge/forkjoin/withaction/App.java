@@ -87,6 +87,8 @@ class MyRecursiveAction extends RecursiveAction{
 			// wait for left task to be completed
 			recursiveActionLeft.join();
 			
+			// you could alternatively execute this line instead of the previous three
+			// invokeAll(Arrays.asList(recursiveActionLeft,recursiveActionRight));
 		}
 	}
 }
