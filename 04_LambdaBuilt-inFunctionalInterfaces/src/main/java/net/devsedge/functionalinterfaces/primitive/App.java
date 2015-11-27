@@ -42,6 +42,7 @@ public class App {
 		 */
 		
 		System.out.println("'Predicate' takes any type and returns a boolean");
+		
 		new Predicate<String>(){
 			@Override
 			public boolean test(String t) {
@@ -186,7 +187,7 @@ public class App {
 		new ToIntFunction<String>(){
 			@Override
 			public int applyAsInt(String value) {
-				System.out.println("\tToIntFunction takes any value and returns an int");
+				System.out.println("\tToIntFunction takes any type and returns an int");
 				return 0;
 			}
 		}.applyAsInt("");
@@ -220,7 +221,7 @@ public class App {
 		new ToLongFunction<String>(){
 			@Override
 			public long applyAsLong(String value) {
-				System.out.println("\tToLongFunction takes any value and returns a long");
+				System.out.println("\tToLongFunction takes any type and returns a long");
 				return 0L;
 			}
 		}.applyAsLong("");
@@ -254,7 +255,7 @@ public class App {
 		new ToDoubleFunction<String>(){
 			@Override
 			public double applyAsDouble(String value) {
-				System.out.println("\tToDoubleFunction takes any value and returns a double");
+				System.out.println("\tToDoubleFunction takes any type and returns a double");
 				return 0L;
 			}
 		}.applyAsDouble("");

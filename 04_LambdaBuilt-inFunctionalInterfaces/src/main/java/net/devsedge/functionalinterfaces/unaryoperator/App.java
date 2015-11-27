@@ -21,6 +21,7 @@ public class App {
 		 */
 		
 		System.out.println("'UnaryOperator' takes any type and returns the same type");
+		
 		new UnaryOperator<String>(){
 			@Override
 			public String apply(String t) {
@@ -41,7 +42,7 @@ public class App {
 			@Override
 			public long applyAsLong(long t) {
 				System.out.println("\tLongUnaryOperator takes/returns a long");
-				return 1;
+				return 1L;
 			}
 		}.applyAsLong(1L);
 		
@@ -49,9 +50,9 @@ public class App {
 			@Override
 			public double applyAsDouble(double t) {
 				System.out.println("\tDoubleUnaryOperator takes/returns a double");
-				return 1;
+				return 1D;
 			}
-		}.applyAsDouble(1);
+		}.applyAsDouble(1D);
 	}
 
 }
