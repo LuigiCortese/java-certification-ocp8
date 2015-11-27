@@ -41,7 +41,7 @@ public class App {
 		 * 
 		 */
 		
-		System.out.println("'Predicate' takes one parameter and returns a boolean");
+		System.out.println("'Predicate' takes any type and returns a boolean");
 		new Predicate<String>(){
 			@Override
 			public boolean test(String t) {
