@@ -11,8 +11,8 @@ public class Util {
 	 * 
 	 * @param millis
 	 */
-	public static void startTimer(long millis) {
-		new Thread(new Timer(millis)).start();
+	public static void startTimer(int limit) {
+		new Thread(new Timer(limit)).start();
 	}
 	
 	/**
@@ -40,18 +40,18 @@ public class Util {
 }
 
 class Timer implements Runnable {
-	private long millis;
+	private int limit;
 	
-	Timer(long millis){
-		this.millis=millis;
+	Timer(int limit){
+		this.limit=limit;
 	}
 	
 	@Override
 	public void run() {
-		for (int currentSecond = 0; currentSecond < 12; currentSecond++) {
+		for (int currentSecond = 0; currentSecond < limit; currentSecond++) {
 			out.println(currentSecond + ": ");
 			try {
-				Thread.sleep(millis);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

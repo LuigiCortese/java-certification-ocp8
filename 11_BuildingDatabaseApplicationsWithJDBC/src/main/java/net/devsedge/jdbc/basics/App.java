@@ -38,7 +38,6 @@ public class App {
 			// Reading ResultSetMetaData
 			System.out.println(meta.getColumnCount());
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

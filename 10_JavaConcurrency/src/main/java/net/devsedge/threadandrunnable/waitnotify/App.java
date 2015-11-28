@@ -1,6 +1,7 @@
 package net.devsedge.threadandrunnable.waitnotify;
 import static java.lang.System.out;
 
+import net.devsedge.NameUtil;
 import net.devsedge.Util;
 /**
  * 
@@ -8,39 +9,38 @@ import net.devsedge.Util;
  *
  */
 public class App {
+	
+	static NameUtil nameUtil=new NameUtil(30);
+	
 	public static void main(String[] args) {
 		new App();
 	}
 
 	App(){
 		//run the timer
-		Util.startTimer(1000);
+		Util.startTimer(11);
 		
 		/*
-		 * Three threads (on the same *Locker* object) will gain the lock in sequence
+		 * Three threads will gain the lock in sequence
 		 */
-		Locker locker=new Locker();
-		
-		new Thread(locker,String.format("%4s", "X")).start();
-		Util.sleep_(1000);
-		
-		new Thread(locker,String.format("%40s", "Y")).start();
-		Util.sleep_(1000);
-		
-		new Thread(locker,String.format("%76s", "Z")).start();
-		Util.sleep_(1000);
+		for (int i = 0; i < 3; i++) {
+			new Thread(new Locker()).start();
+			Util.sleep_(1000);
+		}
 		
 		/*
 		 * All the lockers are now waiting, *Unlocker* will release the lock with "notifyAll"
 		 */
-		new Thread(new Unlocker(),String.format("%112s", "A")).start();
+		new Thread(new Unlocker()).start();
 	}	
 }
 
 class Locker implements Runnable{
+	
+	private String name=App.nameUtil.getName();
+	
 	@Override
 	public void run() {
-		String name=Thread.currentThread().getName();
 		out.println(name+"  starts");
 		out.println(name+"  trying to get in synch block...");
 		synchronized(Util.lock){
@@ -55,9 +55,11 @@ class Locker implements Runnable{
 
 
 class Unlocker implements Runnable{
+	
+	private String name=App.nameUtil.getName();
+	
 	@Override
 	public void run() {
-		String name=Thread.currentThread().getName();
 		out.println(name+"  starts");
 		out.println(name+"  trying to get in synch block...");
 		synchronized(Util.lock){
