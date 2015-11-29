@@ -40,7 +40,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Develop code that uses binary versions of functional interfaces**[[1]](04_LambdaBuilt-inFunctionalInterfaces/src/main/java/net/devsedge/functionalinterfaces/binary/App.java)**
   * Develop code that uses the UnaryOperator interface**[[1]](04_LambdaBuilt-inFunctionalInterfaces/src/main/java/net/devsedge/functionalinterfaces/unaryoperator/App.java)**
 5. **Java Stream API**
-  * Develop code to extract data from an object using peek() and map() methods including primitive versions of the map() method
+  * Develop code to extract data from an object using peek() and map() methods including primitive versions of the map() method**[[1]](05_JavaStreamAPI/src/main/java/net/devsedge/stream/map/App.java)**
   * Search for data by using search methods of the Stream classes including findFirst, findAny, anyMatch, allMatch, noneMatch
   * Develop code that uses the Optional class
   * Develop code that uses Stream data methods and calculation methods**[[1]](05_JavaStreamAPI/src/main/java/net/devsedge/stream/reduce/App.java)**
