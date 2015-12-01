@@ -67,7 +67,7 @@ public class App {
 		
 		Set<Integer> s; 
 		
-		System.out.println("\nHashSet: \n\t- not ordered (insertion order is not maintained), \n\t- not sorted (elements are not kept sorted)\n");
+		System.out.println("\nHashSet: \n\t- not ordered (no kind of order maintained), \n\t- not sorted (elements are not kept sorted)\n");
 		s=new HashSet<>();
 		for(int i=0;i++<10;){
 			int x=(int)(Math.random()*100);
@@ -89,7 +89,7 @@ public class App {
 
 		System.out.println("\n-----------------------------------------------------------------------------------------------");
 		
-		System.out.println("\nTreeSet: \n\t- ordered (insertion order is maintained), \n\t- sorted (elements are kept sorted)\n");
+		System.out.println("\nTreeSet: \n\t- ordered (natural order is maintained), \n\t- sorted (elements are kept sorted)\n");
 		s=new TreeSet<>();
 		for(int i=0;i++<10;){
 			int x=(int)(Math.random()*100);
@@ -107,7 +107,7 @@ public class App {
 		Map<Integer,Integer> m;
 		
 		m = new HashMap<>();
-		System.out.println("\nHashMap: \n\t- not ordered (insertion order is not maintained), \n\t- not sorted (elements are not kept sorted)\n");
+		System.out.println("\nHashMap: \n\t- not ordered (no kind of order maintained), \n\t- not sorted (elements are not kept sorted)\n");
 		for(int i=0;i++<10;){
 			int x=(int)(Math.random()*100),y=(int)(Math.random()*100);
 			System.out.print("Adding "+String.format("%2d", x)+"="+String.format("%2d", y)+": ");
@@ -118,7 +118,7 @@ public class App {
 		System.out.println("\n-----------------------------------------------------------------------------------------------");
 		
 		m = new Hashtable<>();
-		System.out.println("\nHashtable: \n\t- not ordered (insertion order is not maintained), \n\t- not sorted (elements are not kept sorted)\n");
+		System.out.println("\nHashtable: \n\t- not ordered (no kind of order maintained), \n\t- not sorted (elements are not kept sorted)\n");
 		for(int i=0;i++<10;){
 			int x=(int)(Math.random()*100),y=(int)(Math.random()*100);
 			System.out.print("Adding "+String.format("%2d", x)+"="+String.format("%2d", y)+": ");
@@ -140,7 +140,7 @@ public class App {
 		System.out.println("\n-----------------------------------------------------------------------------------------------");
 		
 		m = new TreeMap<>();
-		System.out.println("\nTreeMap: \n\t- ordered (insertion order is maintained), \n\t- sorted (elements are kept sorted)\n");
+		System.out.println("\nTreeMap: \n\t- ordered (natural order is maintained), \n\t- sorted (elements are kept sorted)\n");
 		for(int i=0;i++<10;){
 			int x=(int)(Math.random()*100),y=(int)(Math.random()*100);
 			System.out.print("Adding "+String.format("%2d", x)+"="+String.format("%2d", y)+": ");

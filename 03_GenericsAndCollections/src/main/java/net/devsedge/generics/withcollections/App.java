@@ -75,7 +75,9 @@ public class App {
 		 * When using a sorted collection you have to pay attention to this two rules:
 		 *  
 		 *  (1) an attempt to insert an object that does not implement Comparable will compile, but
-		 *      will throw an exception at runtime
+		 *      will throw an exception at runtime. 
+		 *      
+		 *      (see this for further details: http://stackoverflow.com/a/13890563/1111544 )
 		 *    
 		 *  continues below...
 		 */
