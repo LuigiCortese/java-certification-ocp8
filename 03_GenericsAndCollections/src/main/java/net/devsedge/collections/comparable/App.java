@@ -24,7 +24,7 @@ public class App {
 				};
 		 
 		/*
-		 * Ordering the array
+		 * Ordering the list
 		 */
 		
 		System.out.println("Array not sorted: \n\t"+Arrays.toString(books));
@@ -34,7 +34,7 @@ public class App {
 		System.out.println("\nArray sorted: \n\t"+Arrays.toString(books));
 		
 		/*
-		 * Creating a List of books
+		 * Creating a list of books
 		 */
 		
 		List<Book> otherBooks=Arrays.asList(
@@ -44,7 +44,7 @@ public class App {
 		);
 		
 		/*
-		 * Ordering the array
+		 * Ordering the list
 		 */
 		
 		System.out.println("\nList not sorted: \n\t"+otherBooks);
