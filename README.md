@@ -79,3 +79,4 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Read and set the locale by using the Locale**[[1]](12_Localization/src/main/java/net/devsedge/locale/basics/App.java)** object
   * Create and read a Properties**[[1]](12_Localization/src/main/java/net/devsedge/resourcefile/basics/App.java)** file
   * Build a resource bundle**[[1]](12_Localization/src/main/java/net/devsedge/resourceboundle/fromfile/App.java)****[[2]](12_Localization/src/main/java/net/devsedge/resourceboundle/fromclass/App.java)** for each locale and load a resource bundle in an application
+  * ~~Use NumberFormat, DateFormat and SimpleDateFormat classes~~**[[1]](12_Localization/src/main/java/net/devsedge/format/basics/App.java)**
