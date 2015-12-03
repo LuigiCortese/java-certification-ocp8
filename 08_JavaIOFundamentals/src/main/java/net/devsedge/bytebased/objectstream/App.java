@@ -102,8 +102,6 @@ public class App {
 			
 			System.out.println("\nJust written foo to file.");
 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -126,13 +124,9 @@ public class App {
 			
 			System.out.println("\n...retrieved:\n\t"+foo);
 			
-		} catch (FileNotFoundException e) {
+		} catch (IOException | ClassNotFoundException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
+		} 
 		
 	}
 
