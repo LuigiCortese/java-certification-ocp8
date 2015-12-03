@@ -1,5 +1,4 @@
 package net.devsedge.charbased.print;
-
 /**
  * 
  * @author Luigi Cortese
