@@ -1,4 +1,5 @@
 
+
 # "Oracle Certified Professional, Java SE 8" training code
 
 [![Join the chat at https://gitter.im/LuigiCortese/java-certification-ocp8](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LuigiCortese/java-certification-ocp8?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -58,7 +59,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Work with dates and times across timezones and manage changes resulting from daylight savings including Format date and times values
   * Define and create and manage date-based and time-based events using Instant, Period, Duration, and TemporalUnit
 8. **Java I/O Fundamentals**
-  * Read and write data from the console
+  * Read and write data from the console**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/console/App.java)**
   * Use BufferedReader, BufferedWriter, File, FileReader, FileWriter, FileInputStream, FileOutputStream, ObjectOutputStream, ObjectInputStream, and PrintWriter in the java.iopackage.
 9. **Java File I/O (NIO.2)**
   * Use Path interface to operate on file and directory paths
