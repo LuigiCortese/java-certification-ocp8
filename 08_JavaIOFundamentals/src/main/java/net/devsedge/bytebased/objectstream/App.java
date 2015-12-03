@@ -1,4 +1,4 @@
-package net.devsedge.io.inputstream;
+package net.devsedge.bytebased.objectstream;
 /**
  * 
  * @author Luigi Cortese

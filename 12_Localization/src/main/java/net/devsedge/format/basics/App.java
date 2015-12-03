@@ -47,56 +47,56 @@ public class App {
 		System.out.println(d.format(new Date()));
 
 		// Date instance
-		
+
 		d = DateFormat.getDateInstance();
 		System.out.println(d.format(new Date()));
-		
+
 		d = DateFormat.getDateInstance(DateFormat.SHORT);
 		System.out.println(d.format(new Date()));
-		
-		d = DateFormat.getDateInstance(DateFormat.SHORT,new Locale("en","US"));
+
+		d = DateFormat.getDateInstance(DateFormat.SHORT, new Locale("en", "US"));
 		System.out.println(d.format(new Date()));
-		
+
 		// Time instance
-		
+
 		d = DateFormat.getTimeInstance();
 		System.out.println(d.format(new Date()));
-		
+
 		d = DateFormat.getTimeInstance(DateFormat.SHORT);
 		System.out.println(d.format(new Date()));
-		
-		d = DateFormat.getTimeInstance(DateFormat.SHORT,new Locale("en","US"));
+
+		d = DateFormat.getTimeInstance(DateFormat.SHORT, new Locale("en", "US"));
 		System.out.println(d.format(new Date()));
-		
+
 		// DateTime instance
-		
+
 		d = DateFormat.getDateTimeInstance();
 		System.out.println(d.format(new Date()));
-		
-		d = DateFormat.getDateTimeInstance(DateFormat.SHORT,DateFormat.SHORT);
+
+		d = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT);
 		System.out.println(d.format(new Date()));
-		
-		d = DateFormat.getDateTimeInstance(DateFormat.SHORT,DateFormat.SHORT,new Locale("en","US"));
+
+		d = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT, new Locale("en", "US"));
 		System.out.println(d.format(new Date()));
-		
+
 		/*
 		 * Formatting dates (SimpleDateFormat class extends DateFormat)
 		 */
-		
+
 		SimpleDateFormat s;
-		
-		s=new SimpleDateFormat();
+
+		s = new SimpleDateFormat();
 		System.out.println(s.format(new Date()));
-		
-		s=new SimpleDateFormat("MMMM");
+
+		s = new SimpleDateFormat("MMMM");
 		System.out.println(s.format(new Date()));
-		
-		s=new SimpleDateFormat("MMMM",new Locale("en","US"));
+
+		s = new SimpleDateFormat("MMMM", new Locale("en", "US"));
 		System.out.println(s.format(new Date()));
-		
-		s=new SimpleDateFormat("MMMM", DateFormatSymbols.getInstance());
+
+		s = new SimpleDateFormat("MMMM", DateFormatSymbols.getInstance());
 		System.out.println(s.format(new Date()));
-		
+
 	}
 
 }

@@ -1,4 +1,5 @@
-package net.devsedge.io.outputstream;
+package net.devsedge.charbased.print;
+
 /**
  * 
  * @author Luigi Cortese
