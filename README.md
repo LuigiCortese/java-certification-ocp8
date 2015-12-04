@@ -60,7 +60,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Define and create and manage date-based and time-based events using Instant, Period, Duration, and TemporalUnit
 8. **Java I/O Fundamentals**
   * Read and write data from the console**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/console/App.java)**
-  * Use BufferedReader, BufferedWriter, File**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/file/App.java)**, FileReader, FileWriter, FileInputStream, FileOutputStream**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/filestream/App.java)**, ObjectOutputStream, ObjectInputStream**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/objectstream/App.java)****[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/objectstreamwitstate/App.java)**, and PrintWriter in the java.iopackage.
+  * Use BufferedReader, BufferedWriter, File**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/file/App.java)**, FileReader, FileWriter, FileInputStream, FileOutputStream**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/filestream/App.java)**, ObjectOutputStream, ObjectInputStream**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/objectstream/App.java)****[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/objectstreamwithstate/App.java)**, and PrintWriter in the java.iopackage.
 9. **Java File I/O (NIO.2)**
   * Use Path interface to operate on file and directory paths
   * Use Files class to check, read, delete, copy, move, manage metadata of a file or directory
