@@ -27,9 +27,12 @@ public class App {
 		try(BufferedWriter bw = Files.newBufferedWriter(
 				file, 
 				Charset.forName("UTF-8"),
-				new OpenOption[] {StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE})){
+				new OpenOption[] {
+						StandardOpenOption.TRUNCATE_EXISTING, 
+						StandardOpenOption.CREATE})){
 		
-		bw.write("This text file is created using Path API");
+			bw.write("This text file is created using Path API");
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
