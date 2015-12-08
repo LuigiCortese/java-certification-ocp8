@@ -62,7 +62,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Read and write data from the console**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/console/App.java)**
   * Use BufferedReader, BufferedWriter, File**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/file/App.java)**, FileReader, FileWriter**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/charbased/file/App.java)**, FileInputStream, FileOutputStream**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/filestream/App.java)**, ObjectOutputStream, ObjectInputStream**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/objectstream/App.java)****[[2]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/objectstreamwithstate/App.java)**, ~~DataOutputStream, DataInputStream~~**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/bytebased/datastream/App.java)**, ~~RandomAccessFile~~**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/randomaccessfile/App.java)** and PrintWriter**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/charbased/print/App.java)** in the java.io package.
 9. **Java File I/O (NIO.2)**
-  * Use Path interface to operate on file and directory paths
+  * Use Path interface to operate on file and directory paths**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/path/basics/App.java)**
   * Use Files class to check, read, delete, copy, move, manage metadata of a file or directory.**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/files/getwriter/App.java)** ~~Use FileVisitResult, PathMatcher, OpenOption, FileSystems.~~
   * Use Stream API with NIO.2
 10. **Java Concurrency**
