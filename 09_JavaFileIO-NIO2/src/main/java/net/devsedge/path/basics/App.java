@@ -117,6 +117,31 @@ public class App {
 				+ "\n\t"+p2
 				+ "\n\t----"
 				+ "\n\t"+p1.relativize(p2)+"\n");
+		
+		/*
+		 * Subpath
+		 */
+		
+		p1 = Paths.get("a","b","c","d","e");
+		
+		System.out.println("\nSubpath (0,2): "
+				+ "\n\t"+p1
+				+ "\n\t----"
+				+ "\n\t"+p1.subpath(0,2));
+		
+		p1 = Paths.get("a:","b","c","d","e");
+		
+		System.out.println("\nSubpath (0,2): "
+				+ "\n\t"+p1
+				+ "\n\t----"
+				+ "\n\t"+p1.subpath(0,2));
+		
+		p1 = Paths.get("a:","b","..","b","c");
+		
+		System.out.println("\nSubpath (0,3): "
+				+ "\n\t"+p1
+				+ "\n\t----"
+				+ "\n\t"+p1.subpath(0,3));
 	}
 
 }
