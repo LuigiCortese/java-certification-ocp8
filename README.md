@@ -68,7 +68,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * ~~Read and change file and directory attributes, focusing on the BasicFileAttributes, DosFileAttributes, and PosixFileAttributes interfaces~~**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/nio2/attributes/App.java)**
   * ~~Recursively access a directory tree using the DirectoryStream and FileVisitor interfaces~~
   * ~~Find a file with the PathMatcher interface~~
-  * ~~Watch a directory for changes with the WatchService interface~~
+  * ~~Watch a directory for changes with the WatchService interface~~**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/filesystems/watchservice/App.java)**
 10. **Java Concurrency**
   * Create worker threads using Runnable**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/threadandrunnable/waitnotify/App.java)****[[2]](10_JavaConcurrency/src/main/java/net/devsedge/lockandcondition/lockawaitnotify/App.java)****[[3]](10_JavaConcurrency/src/main/java/net/devsedge/lockandcondition/reentrantreadwritelock/App.java)**, Callable**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/executorservice/withcallable/App.java)** and use an ExecutorService**[[1]](10_JavaConcurrency/src/main/java/net/devsedge/executorservice/withrunnable/App.java)** to concurrently execute tasks
   * Identify potential threading problems among deadlock, starvation, livelock, and race conditions
