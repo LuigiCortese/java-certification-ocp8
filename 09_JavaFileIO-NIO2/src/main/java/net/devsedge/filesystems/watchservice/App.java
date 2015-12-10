@@ -5,9 +5,11 @@ import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardWatchEventKinds;
-import java.nio.file.WatchEvent.Kind;
+import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 
@@ -28,20 +30,17 @@ public class App {
 		
 		file.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY);
 		
-		while(true){
-			WatchKey watchKey;
-			
-			System.out.println("Please, modify foo.txt");
-			
-			try{
-				watchKey = watchService.take();
-			}catch(InterruptedException e) {
-				e.printStackTrace();
-			}
-			
-			System.out.println("Modified!");
-			break;
+		WatchKey watchKey=null;
+
+		System.out.println("Please, modify foo.txt");
+
+		try {
+			watchKey = watchService.take();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
+
+		System.out.println("Modified! "+watchKey.pollEvents().stream().map(WatchEvent::kind).collect(Collectors.toList()));
 
 	}
 
