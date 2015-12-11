@@ -56,7 +56,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Test invariants by using assertions
 7. **Use Java SE 8 Date/Time API**
   * Create and manage date-based and time-based events including a combination of date and time into a single object using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration**[[1]](07_JavaSE8DateTimeAPI/src/main/java/net/devsedge/datetime/basics/App.java)**
-  * Work with dates and times across timezones and manage changes resulting from daylight savings including Format date and times values
+  * Work with dates and times across timezones and manage changes resulting from daylight savings**[[1]](07_JavaSE8DateTimeAPI/src/main/java/net/devsedge/periodduration/daylightsaving/App.java)** including Format date and times values
   * Define and create and manage date-based and time-based events using Instant, Period, Duration, and TemporalUnit
 8. **Java I/O Fundamentals**
   * Read and write data from the console**[[1]](08_JavaIOFundamentals/src/main/java/net/devsedge/io/console/App.java)**
