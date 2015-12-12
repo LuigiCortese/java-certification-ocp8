@@ -1,5 +1,6 @@
 package net.devsedge.stream.sortminmax;
 
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 /**
@@ -15,7 +16,8 @@ public class App {
 		 * Sorting a strings according to their lengths
 		 */
 		
-		Stream.of("aaaa", "bbb", "cc", "d")
+		Arrays.asList("aaaa", "bbb", "cc", "d")
+			.stream()
 			.sorted((a, b) -> a.length() - b.length())  
 			.forEach(System.out::println);
 		
@@ -24,7 +26,8 @@ public class App {
 		 */
 		
 		System.out.println(
-				Stream.of("aaaa", "bbb", "cc", "d")
+				Arrays.asList("aaaa", "bbb", "cc", "d")
+				.stream()
 				.max((a, b) -> a.length() - b.length()));
 
 		/*
@@ -32,7 +35,8 @@ public class App {
 		 */
 		
 		System.out.println(
-				Stream.of("aaaa", "bbb", "cc", "d")
+				Arrays.asList("aaaa", "bbb", "cc", "d")
+				.stream()
 				.min((a, b) -> a.length() - b.length()));
 	}
 
