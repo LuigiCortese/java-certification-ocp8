@@ -1,7 +1,7 @@
 package net.devsedge.stream.sortminmax;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
+import java.util.Comparator;
 
 /**
  * 
@@ -20,6 +20,11 @@ public class App {
 			.stream()
 			.sorted((a, b) -> a.length() - b.length())  
 			.forEach(System.out::println);
+
+		Arrays.asList("aaaa", "bbb", "cc", "d")
+		.stream()
+		.sorted(Comparator.comparing(String::length))  
+		.forEach(System.out::println);
 		
 		/*
 		 * Finding longest string -- returns an optional
@@ -29,6 +34,11 @@ public class App {
 				Arrays.asList("aaaa", "bbb", "cc", "d")
 				.stream()
 				.max((a, b) -> a.length() - b.length()));
+		
+		System.out.println(
+				Arrays.asList("aaaa", "bbb", "cc", "d")
+				.stream()
+				.max(Comparator.comparing(String::length)));
 
 		/*
 		 * Finding shortest string -- returns an optional
@@ -38,6 +48,11 @@ public class App {
 				Arrays.asList("aaaa", "bbb", "cc", "d")
 				.stream()
 				.min((a, b) -> a.length() - b.length()));
+		
+		System.out.println(
+				Arrays.asList("aaaa", "bbb", "cc", "d")
+				.stream()
+				.min(Comparator.comparing(String::length)));
 	}
 
 }
