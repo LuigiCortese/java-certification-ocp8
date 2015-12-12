@@ -45,7 +45,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Search for data by using search methods of the Stream classes including findFirst, findAny, anyMatch, allMatch, noneMatch
   * Develop code that uses the Optional class
   * Develop code that uses Stream data methods and calculation methods**[[1]](05_JavaStreamAPI/src/main/java/net/devsedge/stream/reduce/App.java)****[[2]](05_JavaStreamAPI/src/main/java/net/devsedge/stream/reduce/App.java)**
-  * Sort a collection using Stream API
+  * Sort a collection using Stream API**[[1]](05_JavaStreamAPI/src/main/java/net/devsedge/stream/sortminmx/App.java)**
   * Save results to a collection using the collect method and group/partition data using the Collectors class**[[1]](05_JavaStreamAPI/src/main/java/net/devsedge/stream/creation/App.java)**
   * Use flatMap() methods in the Stream API
 6. **Exceptions and Assertions**
