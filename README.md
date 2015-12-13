@@ -64,7 +64,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
 9. **Java File I/O (NIO.2)**
   * Use Path interface to operate on file and directory paths**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/path/basics/App.java)**
   * Use Files class to check, read, delete, copy, move, manage metadata of a file or directory.**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/files/getwriter/App.java)**
-  * Use Stream API with NIO.2
+  * Use Stream API with NIO.2**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/files/streams/App.java)**
   * ~~Read and change file and directory attributes, focusing on the BasicFileAttributes, DosFileAttributes, and PosixFileAttributes interfaces~~**[[1]](09_JavaFileIO-NIO2/src/main/java/net/devsedge/nio2/attributes/App.java)**
   * ~~Recursively access a directory tree using the DirectoryStream and FileVisitor interfaces~~
   * ~~Find a file with the PathMatcher interface~~
