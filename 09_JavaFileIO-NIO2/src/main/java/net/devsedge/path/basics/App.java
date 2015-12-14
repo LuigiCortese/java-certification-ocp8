@@ -10,6 +10,8 @@ import java.nio.file.Paths;
  */
 public class App {
 
+	static int i;
+	
 	public static void main(String[] args) {
 		
 		/*
@@ -18,7 +20,7 @@ public class App {
 		
 		Path p = Paths.get("a",".","b","..","b","c");
 		
-		System.out.println("Normalizing "
+		System.out.println(++i+") Normalizing "
 				+ "\n\t"+p
 				+ "\n\t----"
 				+ "\n\t"+p.normalize()+"\n");
@@ -34,7 +36,7 @@ public class App {
 		Path p1 = Paths.get("a","b","c");
 		Path p2 = Paths.get("d:","e","f");
 		
-		System.out.println("Resolving (p2 is an absolute path): "
+		System.out.println(++i+") Resolving (p2 is an absolute path): "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -42,7 +44,7 @@ public class App {
 		
 		p2 = Paths.get("");
 		
-		System.out.println("Resolving (p2 is an empty path): "
+		System.out.println(++i+") Resolving (p2 is an empty path): "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -50,7 +52,15 @@ public class App {
 		
 		p2 = Paths.get("d","e","f");
 		
-		System.out.println("Resolving (joining paths): "
+		System.out.println(++i+") Resolving (joining paths): "
+				+ "\n\t"+p1
+				+ "\n\t"+p2
+				+ "\n\t----"
+				+ "\n\t"+p1.resolve(p2)+"\n");
+		
+		p2 = Paths.get("a","b","c");
+		
+		System.out.println(++i+") Resolving (joining paths): "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -67,7 +77,7 @@ public class App {
 		p1 = Paths.get("a","b","c");
 		p2 = Paths.get("d:","e","f");
 		
-		System.out.println("Resolving sibling (p2 is an absolute path): "
+		System.out.println(++i+") Resolving sibling (p2 is an absolute path): "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -75,7 +85,7 @@ public class App {
 		
 		p2 = Paths.get("");
 		
-		System.out.println("Resolving sibling (p2 is an empty path): "
+		System.out.println(++i+") Resolving sibling (p2 is an empty path): "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -83,7 +93,7 @@ public class App {
 		
 		p2 = Paths.get("d","e","f");
 		
-		System.out.println("Resolving sibling (joining paths): "
+		System.out.println(++i+") Resolving sibling (joining paths): "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -96,7 +106,7 @@ public class App {
 		p1 = Paths.get("a","b","c");
 		p2 = Paths.get("d","e","f");
 		
-		System.out.println("Relativizing: "
+		System.out.println(++i+") Relativizing: "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -104,7 +114,7 @@ public class App {
 
 		p2 = Paths.get("a","b","d");
 		
-		System.out.println("Relativizing: "
+		System.out.println(++i+") Relativizing: "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -112,7 +122,7 @@ public class App {
 		
 		p2 = Paths.get("a","b","c","d","e");
 		
-		System.out.println("Relativizing: "
+		System.out.println(++i+") Relativizing: "
 				+ "\n\t"+p1
 				+ "\n\t"+p2
 				+ "\n\t----"
@@ -124,24 +134,24 @@ public class App {
 		
 		p1 = Paths.get("a","b","c","d","e");
 		
-		System.out.println("\nSubpath (0,2): "
+		System.out.println(++i+") Subpath (0,2): "
 				+ "\n\t"+p1
 				+ "\n\t----"
-				+ "\n\t"+p1.subpath(0,2));
+				+ "\n\t"+p1.subpath(0,2)+"\n");
 		
 		p1 = Paths.get("a:","b","c","d","e");
 		
-		System.out.println("\nSubpath (0,2): "
+		System.out.println(++i+") Subpath (0,2): "
 				+ "\n\t"+p1
 				+ "\n\t----"
-				+ "\n\t"+p1.subpath(0,2));
+				+ "\n\t"+p1.subpath(0,2)+"\n");
 		
 		p1 = Paths.get("a:","b","..","b","c");
 		
-		System.out.println("\nSubpath (0,3): "
+		System.out.println(++i+") Subpath (0,3): "
 				+ "\n\t"+p1
 				+ "\n\t----"
-				+ "\n\t"+p1.subpath(0,3));
+				+ "\n\t"+p1.subpath(0,3)+"\n");
 	}
 
 }
