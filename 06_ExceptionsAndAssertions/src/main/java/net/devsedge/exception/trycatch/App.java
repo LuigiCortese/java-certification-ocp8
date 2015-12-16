@@ -18,7 +18,7 @@ public class App {
 			/*
 			 * This catch is not catching all exceptions, but here "Exception" is
 			 * <<any exceptions that bar() happens to throw>>.
-			 * this is equivalent to
+			 * This is equivalent to
 			 *     catch(E1|E2 e)
 			 */
 			
