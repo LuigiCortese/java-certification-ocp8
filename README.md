@@ -50,7 +50,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Use flatMap() methods in the Stream API
 6. **Exceptions and Assertions**
   * Use try-catch and throw statements**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/exception/trycatch/App.java)**
-  * Use catch, multi-catch, and finally clauses
+  * Use catch, multi-catch, and finally clauses**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/exception/multicatch/App.java)**
   * Use Autoclose resources with a try-with-resources statement
   * Create custom exceptions and Auto-closeable resources
   * Test invariants by using assertions
