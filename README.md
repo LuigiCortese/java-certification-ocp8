@@ -51,7 +51,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
 6. **Exceptions and Assertions**
   * Use try-catch and throw statements**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/exception/trycatch/App.java)**
   * Use catch, multi-catch, and finally clauses**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/exception/multicatch/App.java)**
-  * Use Autoclose resources with a try-with-resources statement
+  * Use Autoclose resources with a try-with-resources statement**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/autocloseable/basics/App.java)**
   * Create custom exceptions and Auto-closeable resources
   * Test invariants by using assertions
 7. **Use Java SE 8 Date/Time API**
