@@ -1,5 +1,9 @@
 package net.devsedge.visibility.runtime;
-
+/**
+ * 
+ * @author Luigi Cortese
+ *
+ */
 public class App extends Super{
 
 	public static void main(String[] args) {
