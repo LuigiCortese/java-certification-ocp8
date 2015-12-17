@@ -53,7 +53,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Use catch, multi-catch, and finally clauses**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/exception/multicatch/App.java)**
   * Use Autoclose resources with a try-with-resources statement**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/autocloseable/basics/App.java)**
   * Create custom exceptions and Auto-closeable resources**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/autocloseable/custom/App.java)**
-  * Test invariants by using assertions
+  * Test invariants by using assertions**[[1]](06_ExceptionsAndAssertions/src/main/java/net/devsedge/assertions/basics/App.java)**
 7. **Use Java SE 8 Date/Time API**
   * Create and manage date-based and time-based events including a combination of date and time into a single object using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration**[[1]](07_JavaSE8DateTimeAPI/src/main/java/net/devsedge/datetime/basics/App.java)**
   * Work with dates and times across timezones and manage changes resulting from daylight savings**[[1]](07_JavaSE8DateTimeAPI/src/main/java/net/devsedge/periodduration/daylightsaving/App.java)** including Format date and times values
