@@ -14,7 +14,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
 
 1. **Java Class Design**
   * Implement encapsulation
-  * Implement inheritance including visibility modifiers and composition
+  * Implement inheritance including visibility modifiers and composition**[[1]](01_JavaClassDesign/src/main/java/net/devsedge/visibility/runtime/App.java)**
   * Implement polymorphism
   * Override hashCode, equals, and toString methods from Object class
   * Create and use singleton classes and immutable classes
