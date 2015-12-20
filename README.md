@@ -20,7 +20,7 @@ The project is made up of 12 [Maven](https://maven.apache.org/) modules, one for
   * Create and use singleton classes and immutable classes
   * Develop code that uses static keyword on initialize blocks, variables, methods, and classes
 2. **Advanced Java Class Design**
-  * Develop code that uses abstract classes and methods
+  * Develop code that uses abstract classes and methods**[[1]](02_AdvancedJavaClassDesign/src/main/java/net/devsedge/abstractclass/basics/App.java)**
   * Develop code that uses final keyword
   * Create inner classes including static inner class, local class, nested class, and anonymous inner class
   * Use enumerated types including methods, and constructors in an enum type
