@@ -66,6 +66,14 @@ public class App {
 				+ "\n\t----"
 				+ "\n\t"+p1.resolve(p2)+"\n");
 		
+		p2 = Paths.get("..",".","c");
+
+		System.out.println(++i+") Resolving (joining paths): "
+				+ "\n\t"+p1
+				+ "\n\t"+p2
+				+ "\n\t----"
+				+ "\n\t"+p1.resolve(p2)+"\n");
+		
 		/*
 		 * ResolveSibling returns
 		 * 
@@ -127,6 +135,22 @@ public class App {
 				+ "\n\t"+p2
 				+ "\n\t----"
 				+ "\n\t"+p1.relativize(p2)+"\n");
+		
+		p2 = Paths.get("a","b","..");
+		
+		System.out.println(++i+") Relativizing: "
+				+ "\n\t"+p1
+				+ "\n\t"+p2
+				+ "\n\t----"
+				+ "\n\t"+p1.relativize(p2)+"\n");
+		
+		p2 = Paths.get("a:","b","e");
+		
+		System.out.println(++i+") Relativizing: "
+				+ "\n\t"+Paths.get("a:","b",".","c","..","d")
+				+ "\n\t"+p2
+				+ "\n\t----"
+				+ "\n\t"+Paths.get("a:","b",".","c","..","d").relativize(p2)+"\n");
 		
 		/*
 		 * Subpath
