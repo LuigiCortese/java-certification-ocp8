@@ -13,14 +13,15 @@ import java.util.stream.Stream;
  */
 public class App {
 
+	static final Path rootPath = Paths.get("src/main/java/net/devsedge/files/streams");
+
 	public static void main(String[] args) throws IOException {
-		
-		Path rootPath = Paths.get("src/main/java/net/devsedge/files/streams");
 		
 		/*
 		 * List: Return a lazily populated Stream, the elements of which are the entries in the directory. 
 		 * The listing is not recursive. 
 		 */
+		
 		System.out.println("---- Files.list ----\n");
 		try(Stream<Path> list = Files.list(rootPath)){
 			list.forEach(System.out::println);
